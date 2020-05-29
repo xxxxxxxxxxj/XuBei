@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="-40dp"
+            android:layout_marginEnd="-50dp"
+            android:src="@mipmap/ic_acc_lease_bg" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="-30dp"
+            android:src="@mipmap/ic_acc_lease_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/appbar"
+                layout="@layout/common_title_layout" />
+
+            <com.xubei.shop.ui.views.NoDataView
+                android:id="@+id/ndv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.androidkun.xtablayout.XTabLayout
+                android:id="@+id/xtl_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:xTabDividerWidthWidthText="true"
+                app:xTabIndicatorColor="@color/app_default_blue"
+                app:xTabIndicatorHeight="3dp"
+                app:xTabMode="scrollable"
+                app:xTabSelectedTextColor="@color/app_default_blue"
+                app:xTabTextColor="#111111"
+                app:xTabTextSize="16dp" />
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="12dp"
+                        android:background="#ffffff"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="3dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="16dp"
+                                android:text="选择游戏"
+                                android:textColor="#666666" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rv_letter"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:nestedScrollingEnabled="false"
+                                android:padding="8dp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:background="#ffffff"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="3dp">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_acc_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:nestedScrollingEnabled="false"
+                            android:padding="8dp" />
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

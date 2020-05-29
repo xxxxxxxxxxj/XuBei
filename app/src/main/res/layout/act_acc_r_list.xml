@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="activity"
+            type="com.xubei.shop.ui.module.account.AccRListActivity" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/appbar"
+            layout="@layout/common_title_layout" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/app_title_bg">
+
+            <View
+                android:id="@+id/v_search"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="9dp"
+                android:background="@drawable/act_acc_r_list_title_search_bg"
+                android:onClick="@{activity::onViewClicked}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@mipmap/common_icon_search_w_min"
+                android:drawablePadding="6dp"
+                android:text="商品编号/商品标题"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/v_search"
+                app:layout_constraintEnd_toEndOf="@+id/v_search"
+                app:layout_constraintStart_toStartOf="@+id/v_search"
+                app:layout_constraintTop_toTopOf="@+id/v_search" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.androidkun.xtablayout.XTabLayout
+            android:id="@+id/xtl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            app:xTabIndicatorColor="#0099FF"
+            app:xTabIndicatorHeight="1.5dp"
+            app:xTabMode="fixed"
+            app:xTabSelectedTextColor="#0099FF"
+            app:xTabTextColor="#999999" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</layout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="activity"
+            type="com.xubei.shop.ui.module.rights.RightsApplySellerActivity" />
+    </data>
+
+    <com.xubei.shop.ui.views.CustomInsetsFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/appbar"
+                layout="@layout/common_title_layout" />
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/nsv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#f2f2f2"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.xubei.shop.ui.views.RightsApplyProgressView
+                        android:id="@+id/rapv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="#ffffff"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp"
+                            android:text="维权原因"
+                            android:textColor="#333333"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableEnd="@mipmap/common_icon_arrow_r"
+                            android:gravity="center|end"
+                            android:hint="请选择维权原因"
+                            android:maxLines="1"
+                            android:onClick="@{activity::onViewClicked}"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:background="#ffffff"
+                        android:padding="16dp"
+                        android:text="账号描述"
+                        android:textColor="#333333"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/et_input_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:gravity="start|top"
+                        android:hint="请您在此描述详细问题，以便尽快解决您的问题（500字以内）"
+                        android:inputType="textMultiLine"
+                        android:maxLength="500"
+                        android:minHeight="120dp"
+                        android:padding="16dp"
+                        android:textColor="#666666"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:background="#ffffff"
+                        android:orientation="horizontal"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="截图凭证"
+                            android:textColor="#333333"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="（选填，最多5张，长按可以删除图片哦~）"
+                            android:textColor="#999999"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+
+                    <com.xubei.shop.ui.views.addImage.CustomImageViewGroup
+                        android:id="@+id/civg_images"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white" />
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+            <TextView
+                android:id="@+id/tv_commite"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="#cc039cfe"
+                android:gravity="center"
+                android:onClick="@{activity::onViewClicked}"
+                android:text="确认，申请维权"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </com.xubei.shop.ui.views.CustomInsetsFrameLayout>
+</layout>

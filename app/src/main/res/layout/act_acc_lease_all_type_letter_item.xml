@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv_item_letter"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_margin="8dp"
+    android:background="@drawable/act_lease_letter_item_unok_bg"
+    android:gravity="center"
+    android:textColor="#333333"
+    tools:text="A" />

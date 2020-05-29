@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/app_title_bg</color>
+    <color name="colorPrimaryDark">@color/app_title_bg</color>
+    <color name="colorAccent">@color/app_title_bg</color>
+    <!--app界面背景通用白色-->
+    <color name="act_bg_color">#f2f2f2</color>
+    <!--app界面标题背景通用蓝色-->
+    <color name="app_title_bg">#1B2838</color>
+    <!--app通用按钮颜色-->
+    <color name="app_default_blue">#00c1fb</color>
+</resources>

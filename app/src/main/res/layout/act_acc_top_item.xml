@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <ImageView
+        android:id="@+id/iv_isok"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/act_acc_top_not_all" />
+
+    <ImageView
+        android:id="@+id/iv_acc_logo"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toEndOf="@+id/iv_isok"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/icon_placeholder" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="#333333"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_acc_logo"
+        app:layout_constraintTop_toTopOf="@+id/iv_acc_logo"
+        tools:text="9215测试账号请勿租赁王者测…" />
+
+    <TextView
+        android:id="@+id/tv_acc_no"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="#666666"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_acc_logo"
+        app:layout_constraintEnd_toEndOf="@+id/tv_title"
+        app:layout_constraintStart_toStartOf="@+id/tv_title"
+        tools:text="商品编号：12zutvzibzoq4" />
+
+    <TextView
+        android:id="@+id/textView127"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="15dp"
+        android:text="置顶时长:"
+        android:textColor="#666666"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/iv_acc_logo"
+        app:layout_constraintTop_toBottomOf="@+id/iv_acc_logo" />
+
+    <TextView
+        android:id="@+id/tv_zd_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#00c1fb"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView127"
+        app:layout_constraintStart_toEndOf="@+id/textView127"
+        tools:text="30分钟" />
+
+    <TextView
+        android:id="@+id/textView129"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="价格:"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView127"
+        app:layout_constraintStart_toEndOf="@+id/tv_hot" />
+
+    <TextView
+        android:id="@+id/tv_zd_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#f54e35"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView129"
+        app:layout_constraintStart_toEndOf="@+id/textView129"
+        tools:text="¥1.5" />
+
+    <TextView
+        android:id="@+id/textView131"
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        android:layout_marginStart="20dp"
+        android:background="#e7e7e7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="商品热度:"
+        android:textColor="#666666"
+        android:visibility="visible"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView127"
+        app:layout_constraintStart_toEndOf="@+id/tv_zd_time" />
+
+    <TextView
+        android:id="@+id/tv_hot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fe961c"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView46"
+        app:layout_constraintStart_toEndOf="@+id/textView46"
+        tools:text="176" />
+</androidx.constraintlayout.widget.ConstraintLayout>

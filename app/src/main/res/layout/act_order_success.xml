@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/appbar"
+            layout="@layout/common_title_layout" />
+
+        <ViewSwitcher
+            android:id="@+id/vs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                android:id="@+id/itme_pc"
+                layout="@layout/act_order_success_pc" />
+
+            <include
+                android:id="@+id/itme_phone"
+                layout="@layout/act_order_success_phone" />
+        </ViewSwitcher>
+    </LinearLayout>
+
+</layout>

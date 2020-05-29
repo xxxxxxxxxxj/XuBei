@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/act_order_ic_pay_success" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="支付成功"
+            android:textColor="#333333"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="合计："
+            android:textColor="#999999"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+            app:layout_constraintStart_toStartOf="@+id/textView22" />
+
+        <TextView
+            android:id="@+id/tv_total_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            android:textColor="#ff0000"
+            android:textSize="10sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView29"
+            app:layout_constraintStart_toEndOf="@+id/textView29" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="元"
+            android:textColor="#999999"
+            android:textSize="10sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_total_amount"
+            app:layout_constraintStart_toEndOf="@+id/tv_total_amount" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="(租金："
+            android:textColor="#999999"
+            android:textSize="10sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView33"
+            app:layout_constraintStart_toEndOf="@+id/textView33" />
+
+        <TextView
+            android:id="@+id/tv_rent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            android:textColor="#ff0000"
+            android:textSize="10sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView35"
+            app:layout_constraintStart_toEndOf="@+id/textView35" />
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="元+押金："
+            android:textColor="#999999"
+            android:textSize="10sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_rent"
+            app:layout_constraintStart_toEndOf="@+id/tv_rent" />
+
+        <TextView
+            android:id="@+id/tv_deposit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            android:textColor="#ff0000"
+            android:textSize="10sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView37"
+            app:layout_constraintStart_toEndOf="@+id/textView37" />
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="元）"
+            android:textColor="#999999"
+            android:textSize="10sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_deposit"
+            app:layout_constraintStart_toEndOf="@+id/tv_deposit" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

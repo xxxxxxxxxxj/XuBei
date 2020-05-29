@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:background="#eeeeee">
+
+        <include
+            android:id="@+id/appbar"
+            layout="@layout/common_title_layout" />
+
+        <com.xubei.shop.ui.views.NoDataView
+            android:id="@+id/ndv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:overScrollMode="never"
+                android:paddingBottom="8dp">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:padding="16dp"
+                    android:textColor="#333333"
+                    tools:text="花木兰 寒冰源计划  蛇年蛇女  猴年猴王 电玩全套  源计划剑圣  情人节琴女 SKT滑板鞋等" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_goods_attr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:orientation="vertical"
+                    android:paddingBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/tv_start_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="#ffffff"
+                    android:drawableStart="@mipmap/ic_time"
+                    android:drawablePadding="10dp"
+                    android:padding="16dp"
+                    android:text="租赁开始时间："
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_end_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:drawableStart="@mipmap/ic_time"
+                    android:drawablePadding="10dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:paddingBottom="16dp"
+                    android:text="租赁结束时间："
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:id="@+id/textView68"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="实付金额"
+                        android:textColor="#333333"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView72"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="订单金额"
+                        android:textColor="#333333"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toStartOf="@+id/textView68"
+                        app:layout_constraintTop_toBottomOf="@+id/textView84" />
+
+                    <TextView
+                        android:id="@+id/tv_actual_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:textColor="#e4133a"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/textView68"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        tools:text="¥0.00" />
+
+                    <TextView
+                        android:id="@+id/textView76"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="订单押金"
+                        android:textColor="#333333"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toStartOf="@+id/textView68"
+                        app:layout_constraintTop_toBottomOf="@+id/textView85" />
+
+                    <TextView
+                        android:id="@+id/tv_order_deposit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/textView76"
+                        app:layout_constraintEnd_toEndOf="@+id/tv_actual_amount"
+                        tools:text="¥0.00" />
+
+                    <TextView
+                        android:id="@+id/tv_order_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/textView72"
+                        app:layout_constraintEnd_toEndOf="@+id/tv_actual_amount"
+                        tools:text="¥0.00" />
+
+                    <View
+                        android:id="@+id/textView84"
+                        android:layout_width="0dp"
+                        android:layout_height="1px"
+                        android:layout_marginTop="16dp"
+                        android:background="#e5e5e5"
+                        app:layout_constraintEnd_toEndOf="@+id/tv_actual_amount"
+                        app:layout_constraintStart_toStartOf="@+id/textView68"
+                        app:layout_constraintTop_toBottomOf="@+id/textView76" />
+
+                    <View
+                        android:id="@+id/textView85"
+                        android:layout_width="0dp"
+                        android:layout_height="1px"
+                        android:layout_marginTop="16dp"
+                        android:background="#e5e5e5"
+                        app:layout_constraintEnd_toEndOf="@+id/tv_actual_amount"
+                        app:layout_constraintStart_toStartOf="@+id/textView68"
+                        app:layout_constraintTop_toBottomOf="@+id/textView68" />
+
+                    <View
+                        android:id="@+id/textView87"
+                        android:layout_width="0dp"
+                        android:layout_height="5dp"
+                        android:layout_marginTop="16dp"
+                        android:background="#f2f2f2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView72" />
+
+                    <TextView
+                        android:id="@+id/tv_order_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:textColor="#999999"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toStartOf="@+id/textView68"
+                        app:layout_constraintTop_toBottomOf="@+id/textView87"
+                        tools:text="订单编号：13432565f" />
+
+                    <TextView
+                        android:id="@+id/tv_product_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:textColor="#999999"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toStartOf="@+id/tv_order_number"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_order_number"
+                        tools:text="商品编号：1234563246" />
+
+                    <TextView
+                        android:id="@+id/tv_order_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:textColor="#999999"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/tv_order_number"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_product_number"
+                        tools:text="下单时间：2018-8-2 11:39:34" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+</layout>

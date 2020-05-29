@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="activity"
+            type="com.xubei.shop.ui.module.order.OrderDetailActivity" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:background="#f2f2f2">
+
+        <include
+            android:id="@+id/appbar"
+            layout="@layout/common_title_layout" />
+
+        <com.xubei.shop.ui.views.NoDataView
+            android:id="@+id/ndv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dp_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:drawableStart="@mipmap/act_order_d_ic_tis"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="温馨提示：禁止使用外挂，否则将扣除全部押金和租金"
+                    android:textColor="#999999"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_game_acc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingStart="15dp"
+                        android:paddingTop="8dp"
+                        android:paddingEnd="15dp"
+                        android:paddingBottom="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="游戏账号"
+                            android:textColor="#888888"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_game_user"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:textColor="#444444"
+                            android:textSize="15sp"
+                            tools:text="123456" />
+
+                        <TextView
+                            android:id="@+id/tv_copy_game_user"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:background="@drawable/act_copy_btn_bg"
+                            android:onClick="@{activity::onViewClicked}"
+                            android:paddingLeft="16dp"
+                            android:paddingTop="4dp"
+                            android:paddingRight="16dp"
+                            android:paddingBottom="4dp"
+                            android:text="复制"
+                            android:textColor="@color/app_default_blue"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginStart="15dp"
+                        android:background="#e7e7e7" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingStart="15dp"
+                        android:paddingTop="8dp"
+                        android:paddingEnd="15dp"
+                        android:paddingBottom="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="游戏密码"
+                            android:textColor="#888888"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_game_parssword"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:textColor="#444444"
+                            android:textSize="15sp"
+                            tools:text="123456" />
+
+                        <TextView
+                            android:id="@+id/tv_copy_game_parssword"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:background="@drawable/act_copy_btn_bg"
+                            android:onClick="@{activity::onViewClicked}"
+                            android:paddingLeft="16dp"
+                            android:paddingTop="4dp"
+                            android:paddingRight="16dp"
+                            android:paddingBottom="4dp"
+                            android:text="复制"
+                            android:textColor="@color/app_default_blue"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_login_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingStart="15dp"
+                    android:paddingTop="8dp"
+                    android:paddingEnd="15dp"
+                    android:paddingBottom="8dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="登录码"
+                        android:textColor="#888888"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_login_code"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:textColor="#444444"
+                        android:textSize="15sp"
+                        tools:text="123456" />
+
+                    <TextView
+                        android:id="@+id/tv_copy_login_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:background="@drawable/act_copy_btn_bg"
+                        android:onClick="@{activity::onViewClicked}"
+                        android:paddingLeft="16dp"
+                        android:paddingTop="4dp"
+                        android:paddingRight="16dp"
+                        android:paddingBottom="4dp"
+                        android:text="复制"
+                        android:textColor="@color/app_default_blue"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#ffffff"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/textView58"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="13dp"
+                        android:text="上号方式"
+                        android:textColor="#888888"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_game_login_mode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="15dp"
+                        android:textColor="#444444"
+                        android:textSize="15sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/textView58"
+                        app:layout_constraintEnd_toStartOf="@+id/tv_scan"
+                        tools:text="上号器登录" />
+
+                    <TextView
+                        android:id="@+id/tv_scan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/act_copy_btn_bg"
+                        android:onClick="@{activity::onViewClicked}"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="4dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="4dp"
+                        android:text="扫一扫"
+                        android:textColor="@color/app_default_blue"
+                        android:textSize="12sp"
+                        android:visibility="gone"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/textView58"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView70"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="26dp"
+                        android:text="开始时间"
+                        android:textColor="#888888"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toStartOf="@+id/textView58"
+                        app:layout_constraintTop_toBottomOf="@+id/textView58" />
+
+                    <TextView
+                        android:id="@+id/textView65"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="26dp"
+                        android:layout_marginBottom="13dp"
+                        android:text="结束时间"
+                        android:textColor="#888888"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/textView58"
+                        app:layout_constraintTop_toBottomOf="@+id/textView70" />
+
+                    <TextView
+                        android:id="@+id/tv_begin_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="15dp"
+                        android:text="--"
+                        android:textColor="#444444"
+                        android:textSize="15sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/textView70"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        tools:text="2017-12-11 16:23:37" />
+
+                    <TextView
+                        android:id="@+id/tv_end_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--"
+                        android:textColor="#444444"
+                        android:textSize="15sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/textView65"
+                        app:layout_constraintEnd_toEndOf="@+id/tv_begin_time"
+                        tools:text="2017-12-11 16:24:35" />
+
+                    <View
+                        android:id="@+id/textView5"
+                        android:layout_width="0dp"
+                        android:layout_height="1px"
+                        android:layout_marginTop="13dp"
+                        android:background="#e7e7e7"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/textView58"
+                        app:layout_constraintTop_toBottomOf="@+id/textView58" />
+
+                    <View
+                        android:id="@+id/textView10"
+                        android:layout_width="0dp"
+                        android:layout_height="1px"
+                        android:layout_marginTop="13dp"
+                        android:background="#e7e7e7"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/textView58"
+                        app:layout_constraintTop_toBottomOf="@+id/textView70" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_game"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#ffffff"
+                    android:onClick="@{activity::onViewClicked}">
+
+                    <ImageView
+                        android:id="@+id/iv_game_image"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/icon_placeholder"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_goods_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="#444444"
+                        android:textSize="15sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/iv_game_image"
+                        app:layout_constraintTop_toTopOf="@+id/iv_game_image"
+                        tools:text="VIP8 明世隐双荣耀水晶70英雄65皮肤，武则天等极品皮肤" />
+
+                    <TextView
+                        android:id="@+id/tv_game_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:textColor="#999999"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/textView13"
+                        app:layout_constraintStart_toEndOf="@+id/textView13"
+                        tools:text="王者荣耀" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="游戏区服"
+                        android:textColor="#888888"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/iv_game_image"
+                        app:layout_constraintStart_toStartOf="@+id/tv_goods_title" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:id="@+id/tv_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="15dp"
+                        android:textColor="#f54e35"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/textView15"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        tools:text="支付成功" />
+
+                    <TextView
+                        android:id="@+id/tv_order_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="订单编号"
+                        android:textColor="#888888"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toStartOf="@+id/textView15"
+                        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+                    <TextView
+                        android:id="@+id/tv_order_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/tv_order_name"
+                        app:layout_constraintEnd_toEndOf="@+id/tv_status"
+                        tools:text="20171211161308" />
+
+
+                    <TextView
+                        android:id="@+id/textView60"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="租金"
+                        android:textColor="#888888"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toStartOf="@+id/tv_order_name"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_order_name" />
+
+                    <TextView
+                        android:id="@+id/tv_foregift_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥0.00"
+                        android:textColor="#333333"
+                        android:textSize="14sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/textView60"
+                        app:layout_constraintEnd_toEndOf="@+id/tv_order_no" />
+
+                    <TextView
+                        android:id="@+id/textView62"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="合计"
+                        android:textColor="#888888"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/textView26"
+                        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+                    <TextView
+                        android:id="@+id/tv_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥0.00"
+                        android:textColor="#f54e35"
+                        android:textSize="14sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/textView62"
+                        app:layout_constraintEnd_toEndOf="@+id/tv_order_no" />
+
+                    <TextView
+                        android:id="@+id/textView26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="押金"
+                        android:textColor="#888888"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toStartOf="@+id/textView60"
+                        app:layout_constraintTop_toBottomOf="@+id/textView60" />
+
+                    <TextView
+                        android:id="@+id/tv_foregift"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥0.00"
+                        android:textColor="#333333"
+                        android:textSize="14sp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/textView26"
+                        app:layout_constraintEnd_toEndOf="@+id/tv_order_no" />
+
+                    <View
+                        android:id="@+id/textView30"
+                        android:layout_width="0dp"
+                        android:layout_height="1px"
+                        android:layout_marginStart="15dp"
+                        android:background="#e7e7e7"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="订单状态"
+                        android:textColor="#888888"
+                        app:layout_constraintStart_toStartOf="@+id/textView30"
+                        app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:id="@+id/ll_kf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/act_order_d_bg_kf"
+                    android:gravity="center"
+                    android:onClick="@{activity::onViewClicked}"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@mipmap/act_order_d_ic_kf"
+                        android:drawablePadding="10dp"
+                        android:gravity="center"
+                        android:text="联系客服"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+</layout>

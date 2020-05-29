@@ -1,0 +1,29 @@
+package com.xubei.shop.ui.module.setting.contract;
+
+import com.xubei.shop.ui.module.base.IABaseContract;
+import com.xubei.shop.ui.module.setting.model.QuestionBean;
+
+import java.util.List;
+
+/**
+ * 帮助详情
+ * date：2017/12/4 14:35
+ * author：Seraph
+ *
+ **/
+public interface HelpListContract extends IABaseContract {
+
+    interface View extends IBaseView {
+
+        void setHelpTypeTitle(String title);
+
+        void setQuestionList(List<QuestionBean> list);
+
+        void setNoDataView(int type);
+    }
+
+    abstract class Presenter extends ABasePresenter<View> {
+
+    }
+
+}

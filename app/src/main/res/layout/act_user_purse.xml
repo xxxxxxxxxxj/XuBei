@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="activity"
+            type="com.xubei.shop.ui.module.user.MyPurseActivity" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/appbar"
+            layout="@layout/common_title_layout" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_money_bg"
+                android:scaleType="centerCrop" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/imageView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:src="@mipmap/ic_money_qq"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iv_avatar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_money"
+                    app:layout_constraintBottom_toTopOf="@+id/textView117"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView16"
+                    app:layout_constraintStart_toStartOf="@+id/imageView16" />
+
+                <TextView
+                    android:id="@+id/textView117"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="账户余额（元）"
+                    android:textColor="#99ffffff"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toTopOf="@+id/textView118"
+                    app:layout_constraintEnd_toEndOf="@+id/iv_avatar"
+                    app:layout_constraintStart_toStartOf="@+id/iv_avatar" />
+
+                <TextView
+                    android:id="@+id/textView118"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="24dp"
+                    android:text="0.00"
+                    android:textColor="#ffffff"
+                    android:textSize="34sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView16"
+                    app:layout_constraintEnd_toEndOf="@+id/textView117"
+                    app:layout_constraintStart_toStartOf="@+id/textView117" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2C3847"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/textView47"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的可用余额"
+                    android:textColor="#99ffffff"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_availablea_mount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="0.00"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="16dp"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/act_user_purse_ic_ky_bg" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/textView48"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的冻结资金"
+                    android:textColor="#99ffffff"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_freezea_mount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="0.00"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="16dp"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/act_user_purse_ic_ky_dj_bg" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_recharge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/act_user_purse_cz_btn_bg"
+            android:gravity="center"
+            android:onClick="@{activity::onViewClicked}"
+            android:text="充值"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:drawableStart="@mipmap/ic_jio"
+            android:drawableEnd="@mipmap/ic_jio"
+            android:drawablePadding="5dp"
+            android:gravity="center_horizontal|bottom"
+            android:text="虚贝帮你的快乐管住钱"
+            android:textColor="#999999" />
+
+        <TextView
+            android:id="@+id/btn_withdraw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/act_my_purse_btn_withdraw_bg"
+            android:gravity="center"
+            android:onClick="@{activity::onViewClicked}"
+            android:text="提现"
+            android:textColor="#333333"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:gravity="center"
+            android:text="单次提现金额不得小于50元并且不得大于1万元"
+            android:textColor="#999999"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/appbar"
+            layout="@layout/common_title_layout" />
+
+        <com.androidkun.xtablayout.XTabLayout
+            android:id="@+id/xtl_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            app:xTabDividerWidthWidthText="true"
+            app:xTabIndicatorColor="@color/app_default_blue"
+            app:xTabIndicatorHeight="3dp"
+            app:xTabMode="fixed"
+            app:xTabSelectedTextColor="@color/app_default_blue"
+            app:xTabTextColor="#999999"
+            app:xTabTextSize="16sp">
+
+            <com.androidkun.xtablayout.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="系统消息" />
+
+            <com.androidkun.xtablayout.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="个人消息" />
+
+        </com.androidkun.xtablayout.XTabLayout>
+
+        <include
+            android:id="@+id/cll"
+            layout="@layout/common_list_layout" />
+    </LinearLayout>
+</layout>

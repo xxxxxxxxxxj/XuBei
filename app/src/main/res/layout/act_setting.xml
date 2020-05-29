@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="activity"
+            type="com.xubei.shop.ui.module.setting.SettingActivity" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/appbar"
+            layout="@layout/common_title_layout" />
+
+
+        <TextView
+            android:id="@+id/ll_item1"
+            style="@style/ll_item_layout_style"
+            android:layout_width="match_parent"
+            android:drawableEnd="@mipmap/common_icon_arrow_r_min"
+            android:gravity="center_vertical"
+            android:onClick="@{activity::onViewClicked}"
+            android:padding="16dp"
+            android:text="修改登录密码"
+            android:textColor="#000000" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#d8d8d8" />
+
+        <TextView
+            android:id="@+id/ll_item2"
+            style="@style/ll_item_layout_style"
+            android:layout_width="match_parent"
+            android:drawableEnd="@mipmap/common_icon_arrow_r_min"
+            android:gravity="center_vertical"
+            android:onClick="@{activity::onViewClicked}"
+            android:padding="16dp"
+            android:text="修改支付密码"
+            android:textColor="#000000" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#d8d8d8" />
+
+        <TextView
+            android:id="@+id/ll_item5"
+            style="@style/ll_item_layout_style"
+            android:layout_width="match_parent"
+            android:drawableEnd="@mipmap/common_icon_arrow_r_min"
+            android:gravity="center_vertical"
+            android:onClick="@{activity::onViewClicked}"
+            android:padding="16dp"
+            android:text="新消息通知"
+            android:textColor="#000000" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#d8d8d8" />
+
+        <LinearLayout
+            android:id="@+id/ll_item3"
+            style="@style/ll_item_layout_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="@{activity::onViewClicked}"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="检查更新"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_code"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableEnd="@mipmap/common_icon_arrow_r_min"
+                android:gravity="center"
+                android:textColor="#999999"
+                tools:text="V1.3.0" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#d8d8d8" />
+
+        <TextView
+            android:id="@+id/ll_item4"
+            style="@style/ll_item_layout_style"
+            android:layout_width="match_parent"
+            android:drawableEnd="@mipmap/common_icon_arrow_r_min"
+            android:gravity="center_vertical"
+            android:onClick="@{activity::onViewClicked}"
+            android:padding="16dp"
+            android:text="关于虚贝租号"
+            android:textColor="#000000" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#d8d8d8" />
+
+        <TextView
+            android:id="@+id/btn_log_out"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/bg_default_circle_blue_text"
+            android:gravity="center"
+            android:onClick="@{activity::onViewClicked}"
+            android:padding="12dp"
+            android:text="退出登录"
+            android:textColor="@android:color/white"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+</layout>

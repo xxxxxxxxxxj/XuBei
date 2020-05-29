@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="我的常用工具"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_tool1"
+                style="@style/act_me_btn_item"
+                android:drawableTop="@mipmap/ic_me_wallet"
+                android:text="我的钱包" />
+
+            <TextView
+                android:id="@+id/tv_tool2"
+                style="@style/act_me_btn_item"
+                android:drawableTop="@mipmap/ic_me_collection"
+                android:text="我的收藏" />
+
+            <TextView
+                android:id="@+id/tv_tool3"
+                style="@style/act_me_btn_item"
+                android:drawableTop="@mipmap/ic_me_help"
+                android:text="帮助中心" />
+
+            <TextView
+                android:id="@+id/tv_tool4"
+                style="@style/act_me_btn_item"
+                android:drawableTop="@mipmap/ic_me_customer"
+                android:text="联系客服" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_tool5"
+                style="@style/act_me_btn_item"
+                android:drawableTop="@mipmap/ic_me_msg"
+                android:text="我的消息" />
+
+            <TextView
+                android:id="@+id/tv_tool6"
+                style="@style/act_me_btn_item"
+                android:drawableTop="@mipmap/ic_me_redemption"
+                android:text="兑换中心" />
+
+            <TextView
+                android:id="@+id/tv_tool7"
+                style="@style/act_me_btn_item"
+                android:drawableTop="@mipmap/ic_me_free"
+                android:text="免费租号" />
+
+            <TextView
+                style="@style/act_me_btn_item"
+                android:text="" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</layout>

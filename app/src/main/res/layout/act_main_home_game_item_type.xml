@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingEnd="5dp"
+    android:paddingStart="5dp"
+    android:paddingTop="8dp">
+
+    <TextView
+        android:id="@+id/tv_type_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#111111"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        tools:text="热门游戏" />
+
+    <TextView
+        android:id="@+id/tv_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@mipmap/common_icon_arrow_r_min"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:paddingEnd="4dp"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:text="更多"
+        android:textColor="#999999" />
+
+</LinearLayout>

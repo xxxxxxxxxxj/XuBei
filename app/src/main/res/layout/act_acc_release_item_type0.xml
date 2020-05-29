@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1dp"
+    android:background="@android:color/white"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_key"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_weight="2"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            tools:text="游戏密码" />
+
+        <TextView
+            android:id="@+id/tv_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_weight="3"
+            android:background="@null"
+            android:drawableEnd="@mipmap/common_icon_arrow_r"
+            android:gravity="center|end"
+            android:paddingBottom="14dp"
+            android:paddingTop="14dp"
+            android:singleLine="true"
+            android:textSize="12sp"
+            tools:hint="填写您的游戏密码" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_item_directions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:textColor="#999999"
+        android:textSize="11sp"
+        android:visibility="gone"
+        tools:text="虚贝密码有虚贝百宝箱自动登录，使用人无法知晓密码！" />
+</LinearLayout>

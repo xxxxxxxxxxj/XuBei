@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="天租："
+        android:textColor="#333333"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView97"
+        app:layout_constraintEnd_toStartOf="@+id/tv_lease_day"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/textView67" />
+
+    <TextView
+        android:id="@+id/tv_order_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:textColor="#666666"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="商品编号：123asdf3242q" />
+
+    <TextView
+        android:id="@+id/tv_pay_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:textColor="#118fe6"
+        android:textSize="13sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_order_no"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="出租中" />
+
+    <TextView
+        android:id="@+id/tv_goods_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="#333333"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_pay_status"
+        app:layout_constraintStart_toEndOf="@+id/iv_image"
+        app:layout_constraintTop_toTopOf="@+id/iv_image"
+        tools:text="角色等级 30 英雄数量 138 皮肤数量340 荣耀黄金Ⅴ 白银框" />
+
+    <TextView
+        android:id="@+id/tv_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="#999999"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_goods_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_goods_title"
+        tools:text="绝地求生" />
+
+    <TextView
+        android:id="@+id/tv_lease_hour"
+        android:layout_width="wrap_content"
+        android:layout_height="14dp"
+        android:text="¥0.00"
+        android:textColor="#e31335"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView97"
+        app:layout_constraintStart_toEndOf="@+id/textView97" />
+
+    <TextView
+        android:id="@+id/textView97"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="时租："
+        android:textColor="#333333"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_goods_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_zd_ic" />
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        android:background="#cccccc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_order_no"
+        app:layout_constraintTop_toBottomOf="@+id/ll_btns" />
+
+    <TextView
+        android:id="@+id/textView67"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10小时畅玩："
+        android:textColor="#333333"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_lease_overnight"
+        app:layout_constraintEnd_toStartOf="@+id/tv_lease_overnight" />
+
+    <TextView
+        android:id="@+id/tv_foregift_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        android:textColor="#e41436"
+        android:textSize="13sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView71"
+        app:layout_constraintEnd_toEndOf="@+id/tv_order_no"
+        app:layout_constraintStart_toEndOf="@+id/textView71" />
+
+    <TextView
+        android:id="@+id/textView71"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="押金："
+        android:textColor="#333333"
+        android:textSize="13sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_order_no"
+        app:layout_constraintEnd_toStartOf="@+id/tv_foregift_amount"
+        app:layout_constraintStart_toStartOf="@+id/tv_pay_status" />
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="@+id/tv_order_no"
+        app:layout_constraintTop_toBottomOf="@+id/tv_order_no"
+        app:srcCompat="@mipmap/icon_placeholder" />
+
+    <TextView
+        android:id="@+id/tv_lease_overnight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¥0.00"
+        android:textColor="#e31335"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView97"
+        app:layout_constraintEnd_toEndOf="@+id/tv_pay_status" />
+
+    <TextView
+        android:id="@+id/tv_lease_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¥0.00"
+        android:textColor="#e31335"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView43"
+        app:layout_constraintEnd_toEndOf="@+id/tv_lease_hour"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView43" />
+
+    <LinearLayout
+        android:id="@+id/ll_btns"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="end|center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_pay_status"
+        app:layout_constraintStart_toStartOf="@+id/tv_order_no"
+        app:layout_constraintTop_toBottomOf="@+id/textView97">
+
+        <TextView
+            android:id="@+id/tv_delete"
+            style="@style/order_list_btns"
+            android:text="删除" />
+
+        <TextView
+            android:id="@+id/tv_edit"
+            style="@style/order_list_btns"
+            android:text="编辑商品" />
+
+        <TextView
+            android:id="@+id/tv_update_price"
+            style="@style/order_list_btns"
+            android:text="一键改价" />
+
+        <TextView
+            android:id="@+id/tv_modify"
+            style="@style/order_list_btns"
+            android:text="修改密码"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_obtained"
+            style="@style/order_list_btns"
+            android:text="下架商品" />
+
+        <TextView
+            android:id="@+id/tv_shelf"
+            style="@style/order_list_btns"
+            android:text="上架商品" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_zd_ic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/act_acc_item_qy_bg"
+        android:text="顶"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/tv_area"
+        app:layout_constraintTop_toBottomOf="@+id/tv_area" />
+
+    <TextView
+        android:id="@+id/tv_zd_msg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="置顶结束时间：2018-12-05 12:02"
+        android:textColor="#ff9b00"
+        android:textSize="13dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_zd_ic"
+        app:layout_constraintEnd_toEndOf="@+id/tv_goods_title"
+        app:layout_constraintStart_toEndOf="@+id/tv_zd_ic"
+        app:layout_constraintTop_toTopOf="@+id/tv_zd_ic" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

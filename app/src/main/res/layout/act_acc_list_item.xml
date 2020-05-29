@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_acc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+
+
+        <ImageView
+            android:id="@+id/tv_game_logo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:background="#00ff00" />
+
+        <TextView
+            android:id="@+id/tv_goods_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="#333333"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_game_logo"
+            app:layout_constraintTop_toTopOf="@+id/tv_game_logo"
+            tools:text="215测试账号请勿租赁王者。。。。。。。" />
+
+        <LinearLayout
+            android:id="@+id/ll_goods_title_tag"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/tv_game_logo"
+            app:layout_constraintTop_toBottomOf="@+id/ll_qf_title2">
+
+            <TextView
+                android:id="@+id/tv_qy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/act_acc_item_qy_bg"
+                android:text="签"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_rt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/act_acc_item_rt_bg"
+                android:text="热推"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_xx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/act_acc_item_dsbxx2_bg"
+                android:text="到时不下线"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_free"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/act_acc_item_mfsw_bg"
+                android:text="免费试玩"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_qf_title2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="@+id/tv_goods_title"
+            app:layout_constraintStart_toStartOf="@+id/tv_goods_title"
+            app:layout_constraintTop_toBottomOf="@+id/tv_goods_title">
+
+            <TextView
+                android:id="@+id/tv_title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="#666666"
+                android:textSize="15sp"
+                android:visibility="gone"
+                tools:text="马年皎月丨电玩瑞文丨吕布丨鸡年女拳丨灌篮高手..." />
+
+            <TextView
+                android:id="@+id/tv_game_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="#666666"
+                android:textSize="15sp"
+                tools:text="水晶之痕" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_short_lease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/act_acc_item_qz_bg"
+            android:text="0小时起租"
+            android:textColor="#f54e35"
+            android:textSize="12sp"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="@+id/tv_goods_title"
+            app:layout_constraintTop_toBottomOf="@+id/ll_goods_title_tag" />
+
+        <TextView
+            android:id="@+id/tv_lease_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:text="0.00"
+            android:textColor="#ff5137"
+            android:textSize="20sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/textView16"
+            app:layout_constraintEnd_toStartOf="@+id/textView16"
+            app:layout_constraintTop_toTopOf="@+id/textView16" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="/小时"
+            android:textColor="#a2a2a2"
+            android:textSize="12sp"
+            android:visibility="visible"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_deposit"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_deposit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/act_acc_item_yj_bg"
+            android:text="押金0元"
+            android:textColor="#ff9b00"
+            android:textSize="12sp"
+            android:visibility="visible"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_short_lease"
+            app:layout_constraintStart_toEndOf="@+id/tv_short_lease" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:text="¥"
+            android:textColor="#ff5137"
+            android:textSize="12sp"
+            android:visibility="visible"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_lease_price"
+            app:layout_constraintEnd_toStartOf="@+id/tv_lease_price" />
+
+        <TextView
+            android:id="@+id/tv_hd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/act_acc_item_ic_hd_bg"
+            android:paddingStart="3dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="3dp"
+            android:textColor="#ffffff"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_game_logo"
+            app:layout_constraintTop_toTopOf="@+id/tv_game_logo"
+            tools:text="租二送一" />
+
+
+        <View
+            android:id="@+id/textView111"
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_marginTop="16dp"
+            android:background="#e7e7e7"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_game_logo"
+            app:layout_constraintTop_toBottomOf="@+id/tv_short_lease" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

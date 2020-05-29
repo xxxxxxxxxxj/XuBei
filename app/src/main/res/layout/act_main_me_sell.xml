@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="context"
+            type="com.xubei.shop.ui.module.main.MainMeSell" />
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/title"
+                layout="@layout/act_main_me_title" />
+
+            <LinearLayout
+                android:id="@+id/ll_1"
+                style="@style/ll_item_layout_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{context::onViewClicked}"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="我的出租订单"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawableEnd="@mipmap/common_icon_arrow_r_min2"
+                    android:gravity="center_vertical"
+                    android:text="更多"
+                    android:textColor="#999999" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_order_sell1"
+                    style="@style/act_me_btn_item"
+                    android:drawableTop="@mipmap/ic_me_pending_payment"
+                    android:onClick="@{context::onViewClicked}"
+                    android:text="待付款" />
+
+                <TextView
+                    android:id="@+id/tv_order_sell2"
+                    style="@style/act_me_btn_item"
+                    android:drawableTop="@mipmap/ic_me_lease"
+                    android:onClick="@{context::onViewClicked}"
+                    android:text="租赁中" />
+
+                <TextView
+                    android:id="@+id/tv_order_sell3"
+                    style="@style/act_me_btn_item"
+                    android:drawableTop="@mipmap/ic_me_completed"
+                    android:onClick="@{context::onViewClicked}"
+                    android:text="已完成" />
+
+                <TextView
+                    android:id="@+id/tv_order_sell4"
+                    style="@style/act_me_btn_item"
+                    android:drawableTop="@mipmap/ic_me_rights_protection"
+                    android:onClick="@{context::onViewClicked}"
+                    android:text="售后维权" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_2"
+                style="@style/ll_item_layout_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:onClick="@{context::onViewClicked}"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="我的账号管理"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawableEnd="@mipmap/common_icon_arrow_r_min2"
+                    android:gravity="center_vertical"
+                    android:text="更多"
+                    android:textColor="#999999" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_account_sell1"
+                    style="@style/act_me_btn_item"
+                    android:drawableTop="@mipmap/ic_me_review"
+                    android:onClick="@{context::onViewClicked}"
+                    android:text="审核中" />
+
+                <TextView
+                    android:id="@+id/tv_account_sell2"
+                    style="@style/act_me_btn_item"
+                    android:drawableTop="@mipmap/ic_me_show"
+                    android:onClick="@{context::onViewClicked}"
+                    android:text="展示中" />
+
+                <TextView
+                    android:id="@+id/tv_account_sell3"
+                    style="@style/act_me_btn_item"
+                    android:drawableTop="@mipmap/ic_me_warehouse"
+                    android:onClick="@{context::onViewClicked}"
+                    android:text="仓库中" />
+
+                <TextView
+                    android:id="@+id/tv_account_sell4"
+                    style="@style/act_me_btn_item"
+                    android:drawableTop="@mipmap/ic_me_rent"
+                    android:onClick="@{context::onViewClicked}"
+                    android:text="出租中" />
+            </LinearLayout>
+
+            <include
+                android:id="@+id/tool"
+                layout="@layout/act_main_me_tool" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</layout>
