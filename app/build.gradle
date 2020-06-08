@@ -41,7 +41,7 @@ android {
     compileSdkVersion 28
     buildToolsVersion '29.0.0 rc2'
     defaultConfig {
-        applicationId "com.haohao.zuhaohao"
+        applicationId "com.xubei.shop"
         minSdkVersion 19
         targetSdkVersion 28
         //versionCode 1
