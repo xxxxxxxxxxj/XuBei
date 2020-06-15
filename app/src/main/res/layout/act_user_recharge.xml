@@ -6,10 +6,10 @@
 
         <variable
             name="activity"
-            type="com.xubei.shop.ui.module.user.UserPayActivity" />
+            type="com.haohao.xubei.ui.module.user.UserPayActivity" />
     </data>
 
-    <com.xubei.shop.ui.views.CustomInsetsFrameLayout
+    <com.haohao.xubei.ui.views.CustomInsetsFrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -174,5 +174,5 @@
                     android:textSize="17sp" />
             </LinearLayout>
         </androidx.core.widget.NestedScrollView>
-    </com.xubei.shop.ui.views.CustomInsetsFrameLayout>
+    </com.haohao.xubei.ui.views.CustomInsetsFrameLayout>
 </layout>

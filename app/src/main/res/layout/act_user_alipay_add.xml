@@ -7,10 +7,10 @@
 
         <variable
             name="activity"
-            type="com.xubei.shop.ui.module.user.AlipayAddActivity" />
+            type="com.haohao.xubei.ui.module.user.AlipayAddActivity" />
     </data>
 
-    <com.xubei.shop.ui.views.CustomInsetsFrameLayout
+    <com.haohao.xubei.ui.views.CustomInsetsFrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -229,5 +229,5 @@
 
         </LinearLayout>
 
-    </com.xubei.shop.ui.views.CustomInsetsFrameLayout>
+    </com.haohao.xubei.ui.views.CustomInsetsFrameLayout>
 </layout>

@@ -7,7 +7,7 @@
         android:layout_height="wrap_content"
         android:background="@color/app_title_bg">
 
-        <com.xubei.shop.ui.views.StatusBarView
+        <com.haohao.xubei.ui.views.StatusBarView
             android:id="@+id/statusBarView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -7,7 +7,7 @@
 
         <variable
             name="activity"
-            type="com.xubei.shop.ui.module.account.AccListActivity" />
+            type="com.haohao.xubei.ui.module.account.AccListActivity" />
     </data>
 
     <LinearLayout

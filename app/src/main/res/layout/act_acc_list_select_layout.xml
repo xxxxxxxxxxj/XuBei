@@ -6,10 +6,10 @@
 
         <variable
             name="activity"
-            type="com.xubei.shop.ui.module.account.AccListActivity" />
+            type="com.haohao.xubei.ui.module.account.AccListActivity" />
     </data>
 
-    <com.xubei.shop.ui.views.CustomInsetsFrameLayout
+    <com.haohao.xubei.ui.views.CustomInsetsFrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -23,7 +23,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <com.xubei.shop.ui.views.StatusBarView
+                <com.haohao.xubei.ui.views.StatusBarView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
@@ -83,5 +83,5 @@
                     android:textColor="#ffffff" />
             </LinearLayout>
         </LinearLayout>
-    </com.xubei.shop.ui.views.CustomInsetsFrameLayout>
+    </com.haohao.xubei.ui.views.CustomInsetsFrameLayout>
 </layout>

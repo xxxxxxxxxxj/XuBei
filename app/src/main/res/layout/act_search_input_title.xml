@@ -11,7 +11,7 @@
         android:gravity="center"
         android:orientation="horizontal">
 
-        <com.xubei.shop.ui.views.StatusBarView
+        <com.haohao.xubei.ui.views.StatusBarView
             android:id="@+id/statusBarView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

@@ -18,7 +18,7 @@ android {
         xubeiConfig {
             keyAlias project.KEY_ALIAS
             keyPassword project.KEY_PASSWORD
-            storeFile file('../key_xubei.jks')
+            storeFile file('../key_haohao_xubei.jks')
             storePassword project.STORE_PASSWORD
         }
     }
@@ -41,7 +41,7 @@ android {
     compileSdkVersion 28
     buildToolsVersion '29.0.0 rc2'
     defaultConfig {
-        applicationId "com.xubei.shop"
+        applicationId "com.haohao.xubei"
         minSdkVersion 19
         targetSdkVersion 28
         //versionCode 1
@@ -226,7 +226,7 @@ MobSDK {
 
 greendao {
     schemaVersion 2
-    daoPackage 'com.haohao.zuhaohao.data.db.gen'
+    daoPackage 'com.haohao.xubei.data.db.gen'
     targetGenDir 'src/main/java'
 }
 

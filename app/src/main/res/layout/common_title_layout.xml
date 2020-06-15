@@ -8,7 +8,7 @@
         android:layout_height="wrap_content"
         app:elevation="0dp">
 
-        <com.xubei.shop.ui.views.StatusBarView
+        <com.haohao.xubei.ui.views.StatusBarView
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 

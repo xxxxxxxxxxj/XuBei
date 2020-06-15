@@ -125,7 +125,7 @@
             tools:text="这个账号玩的时候被强行退出了。" />
 
 
-        <com.xubei.shop.ui.views.WeiBoGridView
+        <com.haohao.xubei.ui.views.WeiBoGridView
             android:id="@+id/wbgv_rights_images"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

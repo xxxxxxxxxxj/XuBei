@@ -44,7 +44,7 @@
                         android:src="@mipmap/act_acc_search_ic_delete" />
                 </LinearLayout>
 
-                <com.xubei.shop.ui.views.DynamicLayout
+                <com.haohao.xubei.ui.views.DynamicLayout
                     android:id="@+id/dl_search"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

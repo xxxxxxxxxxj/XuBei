@@ -9,7 +9,7 @@
         android:background="@android:color/black"
         android:orientation="vertical">
 
-        <com.xubei.shop.ui.views.zoom.ImageViewTouchViewPager
+        <com.haohao.xubei.ui.views.zoom.ImageViewTouchViewPager
             android:id="@+id/vp_photo_preview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <com.xubei.shop.ui.views.StatusBarView
+            <com.haohao.xubei.ui.views.StatusBarView
                 android:id="@+id/statusBarView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

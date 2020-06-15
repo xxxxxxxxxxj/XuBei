@@ -7,7 +7,7 @@
 
         <variable
             name="activity"
-            type="com.xubei.shop.ui.module.order.OrderRenewActivity" />
+            type="com.haohao.xubei.ui.module.order.OrderRenewActivity" />
     </data>
 
     <LinearLayout
@@ -117,7 +117,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
-            <com.xubei.shop.ui.views.SubPlusTextView
+            <com.haohao.xubei.ui.views.SubPlusTextView
                 android:id="@+id/sptv_number"
                 android:layout_width="100dp"
                 android:layout_height="25dp"

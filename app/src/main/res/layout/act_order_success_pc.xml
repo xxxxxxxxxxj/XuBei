@@ -7,7 +7,7 @@
 
         <variable
             name="activity"
-            type="com.xubei.shop.ui.module.order.OrderSuccessActivity" />
+            type="com.haohao.xubei.ui.module.order.OrderSuccessActivity" />
     </data>
 
     <LinearLayout

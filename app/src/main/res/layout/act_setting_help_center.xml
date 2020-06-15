@@ -7,7 +7,7 @@
 
         <variable
             name="activity"
-            type="com.xubei.shop.ui.module.setting.HelpCenterActivity" />
+            type="com.haohao.xubei.ui.module.setting.HelpCenterActivity" />
     </data>
 
     <LinearLayout

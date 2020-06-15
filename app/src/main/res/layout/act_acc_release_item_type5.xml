@@ -21,7 +21,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.xubei.shop.ui.views.addImage.CustomImageViewGroup
+    <com.haohao.xubei.ui.views.addImage.CustomImageViewGroup
         android:id="@+id/cvg_add_image"
         android:layout_width="0dp"
         android:layout_height="40dp"

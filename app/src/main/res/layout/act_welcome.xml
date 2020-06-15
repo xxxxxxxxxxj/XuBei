@@ -6,7 +6,7 @@
 
         <variable
             name="activity"
-            type="com.xubei.shop.ui.module.welcome.WelcomeActivity" />
+            type="com.haohao.xubei.ui.module.welcome.WelcomeActivity" />
     </data>
 
     <FrameLayout

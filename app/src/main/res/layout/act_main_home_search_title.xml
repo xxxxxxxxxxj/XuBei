@@ -7,7 +7,7 @@
 
         <variable
             name="home"
-            type="com.xubei.shop.ui.module.main.MainHome" />
+            type="com.haohao.xubei.ui.module.main.MainHome" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -18,7 +18,7 @@
         android:orientation="horizontal"
         tools:background="#000000">
 
-        <com.xubei.shop.ui.views.StatusBarView
+        <com.haohao.xubei.ui.views.StatusBarView
             android:id="@+id/statusBarView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

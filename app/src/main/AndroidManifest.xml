@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.xubei.shop">
+    package="com.haohao.xubei">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -16,7 +16,7 @@
     <uses-permission android:name="android.permission.GET_TASKS" />
 
     <application
-        android:name="com.xubei.shop.AppApplication"
+        android:name="com.haohao.xubei.AppApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_action_name"
         android:label="@string/app_name"
@@ -51,7 +51,7 @@
 
         <!--欢迎和引导页-->
         <activity
-            android:name="com.xubei.shop.ui.module.welcome.WelcomeActivity"
+            android:name="com.haohao.xubei.ui.module.welcome.WelcomeActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.WelcomeTheme">
             <intent-filter>
@@ -61,202 +61,202 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.xubei.shop.ui.module.welcome.GuidePagesActivity"
+            android:name="com.haohao.xubei.ui.module.welcome.GuidePagesActivity"
             android:screenOrientation="portrait" />
         <!--主页-->
         <activity
-            android:name="com.xubei.shop.ui.module.main.MainActivity"
+            android:name="com.haohao.xubei.ui.module.main.MainActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait" />
         <!--图片预览 android:process=":picture" -->
         <activity
-            android:name="com.xubei.shop.ui.module.common.photopreview.PhotoPreviewActivity"
+            android:name="com.haohao.xubei.ui.module.common.photopreview.PhotoPreviewActivity"
             android:screenOrientation="portrait" />
         <!--通用获取本地图片-->
         <activity
-            android:name="com.xubei.shop.ui.module.common.photolist.LocalImageListActivity"
+            android:name="com.haohao.xubei.ui.module.common.photolist.LocalImageListActivity"
             android:screenOrientation="portrait" />
         <!--登录-->
         <activity
-            android:name="com.xubei.shop.ui.module.login.LoginTypeSelectActivity"
+            android:name="com.haohao.xubei.ui.module.login.LoginTypeSelectActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.xubei.shop.ui.module.login.LoginActivity"
+            android:name="com.haohao.xubei.ui.module.login.LoginActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <!--注册-->
         <activity
-            android:name="com.xubei.shop.ui.module.login.RegisteredActivity"
+            android:name="com.haohao.xubei.ui.module.login.RegisteredActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <!--重置密码（找回/修改）-->
         <activity
-            android:name="com.xubei.shop.ui.module.login.ResetPasswordActivity"
+            android:name="com.haohao.xubei.ui.module.login.ResetPasswordActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <!--账号搜索-->
         <activity
-            android:name="com.xubei.shop.ui.module.account.AccSearchActivity"
+            android:name="com.haohao.xubei.ui.module.account.AccSearchActivity"
             android:screenOrientation="portrait" />
         <!--账号发布搜索-->
         <activity
-            android:name="com.xubei.shop.ui.module.account.AccRSearchActivity"
+            android:name="com.haohao.xubei.ui.module.account.AccRSearchActivity"
             android:screenOrientation="portrait" />
         <!--账号列表-->
         <activity
-            android:name="com.xubei.shop.ui.module.account.AccListActivity"
+            android:name="com.haohao.xubei.ui.module.account.AccListActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <!--账号收藏-->
         <activity
-            android:name="com.xubei.shop.ui.module.account.AccSCActivity"
+            android:name="com.haohao.xubei.ui.module.account.AccSCActivity"
             android:screenOrientation="portrait" />
         <!--账号详情-->
         <activity
-            android:name="com.xubei.shop.ui.module.account.AccDetailActivity"
+            android:name="com.haohao.xubei.ui.module.account.AccDetailActivity"
             android:screenOrientation="portrait" />
         <!--免费试玩账号详情-->
         <activity
-            android:name="com.xubei.shop.ui.module.account.AccFreeDetailActivity"
+            android:name="com.haohao.xubei.ui.module.account.AccFreeDetailActivity"
             android:screenOrientation="portrait" />
         <!--我的账号详情-->
         <activity
-            android:name="com.xubei.shop.ui.module.account.AccRDetailActivity"
+            android:name="com.haohao.xubei.ui.module.account.AccRDetailActivity"
             android:screenOrientation="portrait" />
         <!--账号发布界面-->
         <activity
-            android:name="com.xubei.shop.ui.module.account.AccReleaseActivity"
+            android:name="com.haohao.xubei.ui.module.account.AccReleaseActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <!--账号重新编辑-->
         <activity
-            android:name="com.xubei.shop.ui.module.account.AccREditActivity"
+            android:name="com.haohao.xubei.ui.module.account.AccREditActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <!--账号区服选择-->
         <activity
-            android:name="com.xubei.shop.ui.module.account.AccAreaSelectActivity"
+            android:name="com.haohao.xubei.ui.module.account.AccAreaSelectActivity"
             android:screenOrientation="portrait" />
 
         <!--我的账号发布列表-->
         <activity
-            android:name="com.xubei.shop.ui.module.account.AccRListActivity"
+            android:name="com.haohao.xubei.ui.module.account.AccRListActivity"
             android:screenOrientation="portrait" />
         <!--账号发布协议-->
         <activity
-            android:name="com.xubei.shop.ui.module.account.AccRAgreementActivity"
+            android:name="com.haohao.xubei.ui.module.account.AccRAgreementActivity"
             android:screenOrientation="portrait" />
         <!--账号发布成功-->
         <activity
-            android:name="com.xubei.shop.ui.module.account.AccRSuccessActivity"
+            android:name="com.haohao.xubei.ui.module.account.AccRSuccessActivity"
             android:screenOrientation="portrait" />
         <!--账号搜索结果界面-->
         <activity
-            android:name="com.xubei.shop.ui.module.account.AccSResultActivity"
+            android:name="com.haohao.xubei.ui.module.account.AccSResultActivity"
             android:screenOrientation="portrait" />
         <!--设置-->
         <activity
-            android:name="com.xubei.shop.ui.module.setting.SettingActivity"
+            android:name="com.haohao.xubei.ui.module.setting.SettingActivity"
             android:screenOrientation="portrait" />
         <!--新消息设置-->
         <activity
-            android:name="com.xubei.shop.ui.module.setting.SettingNewMsgActivity"
+            android:name="com.haohao.xubei.ui.module.setting.SettingNewMsgActivity"
             android:screenOrientation="portrait" />
         <!--个人资料-->
         <activity
-            android:name="com.xubei.shop.ui.module.user.UserInfoActivity"
+            android:name="com.haohao.xubei.ui.module.user.UserInfoActivity"
             android:screenOrientation="portrait" />
         <!--我的钱包-->
         <activity
-            android:name="com.xubei.shop.ui.module.user.MyPurseActivity"
+            android:name="com.haohao.xubei.ui.module.user.MyPurseActivity"
             android:screenOrientation="portrait" />
         <!--我的消息-->
         <activity
-            android:name="com.xubei.shop.ui.module.user.MyMsgActivity"
+            android:name="com.haohao.xubei.ui.module.user.MyMsgActivity"
             android:screenOrientation="portrait" />
         <!--用户支付界面-->
         <activity
-            android:name="com.xubei.shop.ui.module.user.UserPayActivity"
+            android:name="com.haohao.xubei.ui.module.user.UserPayActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <!--用户提现界面-->
         <activity
-            android:name="com.xubei.shop.ui.module.user.UserGetMoneyActivity"
+            android:name="com.haohao.xubei.ui.module.user.UserGetMoneyActivity"
             android:screenOrientation="portrait" />
         <!--填写订单-->
         <activity
-            android:name="com.xubei.shop.ui.module.order.OrderCreateActivity"
+            android:name="com.haohao.xubei.ui.module.order.OrderCreateActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <!--所有订单-->
         <activity
-            android:name="com.xubei.shop.ui.module.order.OrderAllActivity"
+            android:name="com.haohao.xubei.ui.module.order.OrderAllActivity"
             android:screenOrientation="portrait" />
         <!--订单详情-->
         <activity
-            android:name="com.xubei.shop.ui.module.order.OrderDetailActivity"
+            android:name="com.haohao.xubei.ui.module.order.OrderDetailActivity"
             android:screenOrientation="portrait" />
         <!--出租订单详情-->
         <activity
-            android:name="com.xubei.shop.ui.module.order.OrderRDetailActivity"
+            android:name="com.haohao.xubei.ui.module.order.OrderRDetailActivity"
             android:screenOrientation="portrait" />
         <!--订单列表（卖家）-->
         <activity
-            android:name="com.xubei.shop.ui.module.order.OrderAllSellerActivity"
+            android:name="com.haohao.xubei.ui.module.order.OrderAllSellerActivity"
             android:screenOrientation="portrait" />
         <!--修改支付密码-->
         <activity
-            android:name="com.xubei.shop.ui.module.login.ResetPayPwActivity"
+            android:name="com.haohao.xubei.ui.module.login.ResetPayPwActivity"
             android:screenOrientation="portrait" />
         <!--申请维权-->
         <activity
-            android:name="com.xubei.shop.ui.module.rights.RightsApplySellerActivity"
+            android:name="com.haohao.xubei.ui.module.rights.RightsApplySellerActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <!--维权详情（查看维权记录）-->
         <activity
-            android:name="com.xubei.shop.ui.module.rights.RightsDetailSellerActivity"
+            android:name="com.haohao.xubei.ui.module.rights.RightsDetailSellerActivity"
             android:screenOrientation="portrait" />
         <!--维权处理-->
         <activity
-            android:name="com.xubei.shop.ui.module.rights.RightsProcessSellerActivity"
+            android:name="com.haohao.xubei.ui.module.rights.RightsProcessSellerActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <!--身份验证-->
         <activity
-            android:name="com.xubei.shop.ui.module.user.UserVerifiedActivity"
+            android:name="com.haohao.xubei.ui.module.user.UserVerifiedActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <!--绑定支付宝-->
         <activity
-            android:name="com.xubei.shop.ui.module.user.AlipayAddActivity"
+            android:name="com.haohao.xubei.ui.module.user.AlipayAddActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <!--支付宝账号修改-->
         <activity
-            android:name="com.xubei.shop.ui.module.user.AlipayModifyActivity"
+            android:name="com.haohao.xubei.ui.module.user.AlipayModifyActivity"
             android:screenOrientation="portrait" />
         <!--订单续租-->
         <activity
-            android:name="com.xubei.shop.ui.module.order.OrderRenewActivity"
+            android:name="com.haohao.xubei.ui.module.order.OrderRenewActivity"
             android:screenOrientation="portrait" />
         <!--扫一扫-->
         <activity
-            android:name="com.xubei.shop.ui.module.common.scan.CaptureActivity"
+            android:name="com.haohao.xubei.ui.module.common.scan.CaptureActivity"
             android:screenOrientation="portrait" />
         <!--订单支付成功-->
         <activity
-            android:name="com.xubei.shop.ui.module.order.OrderSuccessActivity"
+            android:name="com.haohao.xubei.ui.module.order.OrderSuccessActivity"
             android:screenOrientation="portrait" />
         <!--通用web展示界面-->
         <activity
-            android:name="com.xubei.shop.ui.module.common.web.CommonWebLocalActivity"
+            android:name="com.haohao.xubei.ui.module.common.web.CommonWebLocalActivity"
             android:screenOrientation="portrait" />
         <!--通用web展示界面-->
         <activity
-            android:name="com.xubei.shop.ui.module.common.web.CommonAgentWebActivity"
+            android:name="com.haohao.xubei.ui.module.common.web.CommonAgentWebActivity"
             android:screenOrientation="portrait" />
         <!--bugly升级-->
         <activity
@@ -265,87 +265,87 @@
             tools:replace="theme" />
         <!--订单搜索界面-->
         <activity
-            android:name="com.xubei.shop.ui.module.order.OrderSearchActivity"
+            android:name="com.haohao.xubei.ui.module.order.OrderSearchActivity"
             android:screenOrientation="portrait" />
         <!--订单选择支付-->
         <activity
-            android:name="com.xubei.shop.ui.module.order.OrderPayActivity"
+            android:name="com.haohao.xubei.ui.module.order.OrderPayActivity"
             android:screenOrientation="portrait" />
         <!--公告-->
         <activity
-            android:name="com.xubei.shop.ui.module.user.NoticeListActivity"
+            android:name="com.haohao.xubei.ui.module.user.NoticeListActivity"
             android:screenOrientation="portrait" />
         <!--帮助类型列表-->
         <activity
-            android:name="com.xubei.shop.ui.module.setting.HelpListActivity"
+            android:name="com.haohao.xubei.ui.module.setting.HelpListActivity"
             android:screenOrientation="portrait" />
         <!--帮助中心-->
         <activity
-            android:name="com.xubei.shop.ui.module.setting.HelpCenterActivity"
+            android:name="com.haohao.xubei.ui.module.setting.HelpCenterActivity"
             android:screenOrientation="portrait" />
         <!--关于-->
         <activity
-            android:name="com.xubei.shop.ui.module.setting.AboutActivity"
+            android:name="com.haohao.xubei.ui.module.setting.AboutActivity"
             android:screenOrientation="portrait" />
         <!--修改昵称-->
         <activity
-            android:name="com.xubei.shop.ui.module.user.UpdateNickNameActivity"
+            android:name="com.haohao.xubei.ui.module.user.UpdateNickNameActivity"
             android:screenOrientation="portrait" />
         <!--更改绑定手机-->
         <activity
-            android:name="com.xubei.shop.ui.module.user.UpdateBindPhoneActivity"
+            android:name="com.haohao.xubei.ui.module.user.UpdateBindPhoneActivity"
             android:screenOrientation="portrait" />
         <!--资金明细-->
         <activity
-            android:name="com.xubei.shop.ui.module.user.FundDetailsActivity"
+            android:name="com.haohao.xubei.ui.module.user.FundDetailsActivity"
             android:screenOrientation="portrait" />
         <!--冻结明细-->
         <activity
-            android:name="com.xubei.shop.ui.module.user.FreezeDetailsActivity"
+            android:name="com.haohao.xubei.ui.module.user.FreezeDetailsActivity"
             android:screenOrientation="portrait" />
         <!--手机绑定-->
         <activity
-            android:name="com.xubei.shop.ui.module.login.PhoneBindActivity"
+            android:name="com.haohao.xubei.ui.module.login.PhoneBindActivity"
             android:screenOrientation="portrait" />
         <!--账号租赁所有类型-->
         <activity
-            android:name="com.xubei.shop.ui.module.account.AccLeaseAllTypeActivity"
+            android:name="com.haohao.xubei.ui.module.account.AccLeaseAllTypeActivity"
             android:screenOrientation="portrait" />
         <!--租赁须知-->
         <activity
-            android:name="com.xubei.shop.ui.module.account.AccLeaseNoticeActivity"
+            android:name="com.haohao.xubei.ui.module.account.AccLeaseNoticeActivity"
             android:screenOrientation="portrait" />
         <!--我的账号搜索-->
         <activity
-            android:name="com.xubei.shop.ui.module.account.AccRListSearchActivity"
+            android:name="com.haohao.xubei.ui.module.account.AccRListSearchActivity"
             android:screenOrientation="portrait" />
         <!--我的账号搜索结果-->
         <activity
-            android:name="com.xubei.shop.ui.module.account.AccRListSResultActivity"
+            android:name="com.haohao.xubei.ui.module.account.AccRListSResultActivity"
             android:screenOrientation="portrait" />
         <!--商品置顶-->
         <activity
-            android:name="com.xubei.shop.ui.module.account.AccTopActivity"
+            android:name="com.haohao.xubei.ui.module.account.AccTopActivity"
             android:screenOrientation="portrait" />
         <!-- 置顶说明-->
         <activity
-            android:name="com.xubei.shop.ui.module.account.AccTopDesActivity"
+            android:name="com.haohao.xubei.ui.module.account.AccTopDesActivity"
             android:screenOrientation="portrait" />
         <!--兑换中心-->
         <activity
-            android:name="com.xubei.shop.ui.module.user.RedemptionCenterActivity"
+            android:name="com.haohao.xubei.ui.module.user.RedemptionCenterActivity"
             android:hardwareAccelerated="false"
             android:screenOrientation="portrait" />
         <!--兑换记录-->
         <activity
-            android:name="com.xubei.shop.ui.module.user.RedemptionRecordActivity"
+            android:name="com.haohao.xubei.ui.module.user.RedemptionRecordActivity"
             android:screenOrientation="portrait" />
         <!--免费租号-->
         <activity
-            android:name="com.xubei.shop.ui.module.account.AccUserFreeActivity"
+            android:name="com.haohao.xubei.ui.module.account.AccUserFreeActivity"
             android:screenOrientation="portrait" />
         <!--金币说明-->
-        <activity android:name="com.xubei.shop.ui.module.user.FundDetailsGoldActivity"
+        <activity android:name="com.haohao.xubei.ui.module.user.FundDetailsGoldActivity"
             android:screenOrientation="portrait" />
         <!--剪切界面-->
         <activity
@@ -371,19 +371,19 @@
 
         <!--微信支付-->
         <activity
-            android:name="com.xubei.shop.wxapi.WXPayEntryActivity"
+            android:name="com.haohao.xubei.wxapi.WXPayEntryActivity"
             android:exported="true"
             android:launchMode="singleTop"
             android:theme="@android:style/Theme.Translucent" />
         <!--腾讯短信验证码（窗口）-->
         <activity
-            android:name="com.xubei.shop.ui.module.login.VerifyPopupActivity"
+            android:name="com.haohao.xubei.ui.module.login.VerifyPopupActivity"
             android:theme="@style/verify_dialog" />
 
 
         <!--极光推送广播-->
         <receiver
-            android:name="com.xubei.shop.ui.module.receiver.JPushReceiver"
+            android:name="com.haohao.xubei.ui.module.receiver.JPushReceiver"
             android:enabled="true"
             android:exported="false">
             <intent-filter>
@@ -396,7 +396,7 @@
         </receiver>
 
         <!-- 用户自定义接收消息器,3.0.7开始支持,目前新tag/alias接口设置结果会在该广播接收器对应的方法中回调-->
-        <receiver android:name="com.xubei.shop.ui.module.receiver.JPushMessageReceiver">
+        <receiver android:name="com.haohao.xubei.ui.module.receiver.JPushMessageReceiver">
             <intent-filter>
                 <action android:name="cn.jpush.android.intent.RECEIVE_MESSAGE" />
                 <category android:name="com.haohao.zuhaohao" />
@@ -405,7 +405,7 @@
 
         <!--辅助打开帮助界面-->
         <activity
-            android:name="com.xubei.shop.ui.module.accessibility.AccessibilityOpenHelperActivity"
+            android:name="com.haohao.xubei.ui.module.accessibility.AccessibilityOpenHelperActivity"
             android:excludeFromRecents="true"
             android:launchMode="singleTask"
             android:process=":BackgroundService"
@@ -416,7 +416,7 @@
 
         <!-- 注册辅助功能服务-->
         <service
-            android:name="com.xubei.shop.ui.module.accessibility.AccessibilityAutoInputService"
+            android:name="com.haohao.xubei.ui.module.accessibility.AccessibilityAutoInputService"
             android:exported="true"
             android:label="@string/accessibility_tip"
             android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"

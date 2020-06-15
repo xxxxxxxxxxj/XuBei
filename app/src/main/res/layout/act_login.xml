@@ -6,10 +6,10 @@
 
         <variable
             name="activity"
-            type="com.xubei.shop.ui.module.login.LoginActivity" />
+            type="com.haohao.xubei.ui.module.login.LoginActivity" />
     </data>
 
-    <com.xubei.shop.ui.views.CustomInsetsFrameLayout
+    <com.haohao.xubei.ui.views.CustomInsetsFrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -344,5 +344,5 @@
             </androidx.core.widget.NestedScrollView>
 
         </LinearLayout>
-    </com.xubei.shop.ui.views.CustomInsetsFrameLayout>
+    </com.haohao.xubei.ui.views.CustomInsetsFrameLayout>
 </layout>

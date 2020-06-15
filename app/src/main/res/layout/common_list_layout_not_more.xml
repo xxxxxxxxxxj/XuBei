@@ -7,7 +7,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <com.xubei.shop.ui.views.NoDataView
+        <com.haohao.xubei.ui.views.NoDataView
             android:id="@+id/ndv"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />

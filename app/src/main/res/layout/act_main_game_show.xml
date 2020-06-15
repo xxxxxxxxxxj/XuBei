@@ -8,7 +8,7 @@
     app:cardCornerRadius="8dp"
     app:cardElevation="5dp">
 
-    <com.xubei.shop.ui.views.CustomSquareImageView
+    <com.haohao.xubei.ui.views.CustomSquareImageView
         android:id="@+id/iv_logo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

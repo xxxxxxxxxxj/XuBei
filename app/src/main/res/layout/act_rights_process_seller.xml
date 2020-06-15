@@ -6,10 +6,10 @@
 
         <variable
             name="activity"
-            type="com.xubei.shop.ui.module.rights.RightsProcessSellerActivity" />
+            type="com.haohao.xubei.ui.module.rights.RightsProcessSellerActivity" />
     </data>
 
-    <com.xubei.shop.ui.views.CustomInsetsFrameLayout
+    <com.haohao.xubei.ui.views.CustomInsetsFrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -35,7 +35,7 @@
                     android:descendantFocusability="blocksDescendants"
                     android:orientation="vertical">
 
-                    <com.xubei.shop.ui.views.RightsApplyProgressView
+                    <com.haohao.xubei.ui.views.RightsApplyProgressView
                         android:id="@+id/rapv"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -130,7 +130,7 @@
                             android:textSize="10sp" />
                     </LinearLayout>
 
-                    <com.xubei.shop.ui.views.addImage.CustomImageViewGroup
+                    <com.haohao.xubei.ui.views.addImage.CustomImageViewGroup
                         android:id="@+id/civg_images"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -153,5 +153,5 @@
             </androidx.core.widget.NestedScrollView>
 
         </LinearLayout>
-    </com.xubei.shop.ui.views.CustomInsetsFrameLayout>
+    </com.haohao.xubei.ui.views.CustomInsetsFrameLayout>
 </layout>

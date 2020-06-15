@@ -7,7 +7,7 @@
 
         <variable
             name="activity"
-            type="com.xubei.shop.ui.module.user.UserGetMoneyActivity" />
+            type="com.haohao.xubei.ui.module.user.UserGetMoneyActivity" />
     </data>
 
     <LinearLayout

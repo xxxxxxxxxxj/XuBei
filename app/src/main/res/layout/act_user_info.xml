@@ -6,7 +6,7 @@
 
         <variable
             name="activity"
-            type="com.xubei.shop.ui.module.user.UserInfoActivity" />
+            type="com.haohao.xubei.ui.module.user.UserInfoActivity" />
     </data>
 
     <LinearLayout
